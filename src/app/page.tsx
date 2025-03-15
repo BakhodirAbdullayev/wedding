@@ -1,18 +1,34 @@
-"use client"
+"use client";
 import { useEffect } from "react";
-import styles from "@/app/page.module.css";
+import Showcase from "./components/showcase";
 
 // @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Line from "./components/line";
+import DateSection from "./components/date";
+import Location from "./components/location";
+import Music from "./components/music";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1500 });
   }, []);
 
   return (
-    <div className={styles.main}>
+    <main className="max-w-[450px] p-2 pb-20 bg-[#ececec] w-full min-h-svh overflow-x-hidden">
+      <Showcase />
+      <div className="my-20">
+        <Line />
+      </div>
+      <DateSection />
+      <Location />
+      <Music />
+    </main>
+  );
+}
+{
+  /* <div className={styles.main}>
       <div className={styles.headingContainer}>
         <h1>AOS + Next.Js + TypeScript</h1>
         <br />
@@ -81,6 +97,5 @@ export default function Home() {
         </div>
 
       </div>
-    </div>
-  );
+    </div> */
 }
