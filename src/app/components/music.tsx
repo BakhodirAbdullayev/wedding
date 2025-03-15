@@ -1,30 +1,32 @@
+"use client";
 import { Pause, Play } from "lucide-react";
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 
 const Music: FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audio = new Audio("/music1.mp3");
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    audio.loop = true;
-    audio.autoplay = true;
-    audio.play();
-    setIsPlaying(true);
+    if (typeof window !== "undefined") {
+      audioRef.current = new Audio("/music1.mp3");
+      audioRef.current.loop = true;
+    }
   }, []);
+
   const play = () => {
-    audio.play();
+    audioRef.current?.play();
     setIsPlaying(true);
   };
 
   const stop = () => {
-    audio.pause();
+    audioRef.current?.pause();
     setIsPlaying(false);
   };
 
   return (
-    <div className="fixed bottom-5 right-5">
+    <div className="fixed top-5 right-5">
       <button
-        className="bg-[#a9a05c] w-10 h-10 flex justify-center items-center rounded-full text-gray-900"
+        className={`bg-[#a9a05c] w-10 h-10 flex justify-center items-center rounded-full text-gray-900 transition-transform duration-300 animate-pulse`}
         onClick={isPlaying ? stop : play}
       >
         {isPlaying ? <Pause size={20} /> : <Play size={20} />}
