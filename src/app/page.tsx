@@ -1,18 +1,17 @@
 "use client";
 import { useEffect } from "react";
 import Showcase from "./components/showcase";
-
-// @ts-ignore
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Line from "./components/line";
 import DateSection from "./components/date";
 import Location from "./components/location";
 import Music from "./components/music";
 
+// @ts-ignore
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Home() {
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 1500, once: false });
   }, []);
 
   return (

@@ -4,7 +4,7 @@ import Header from "./header";
 
 const DateSection: FC = (): JSX.Element => {
   return (
-    <div className="relative">
+    <div className="relative mt-28">
       <Flowers />
       <Header
         text="Assalomu alaykum"
