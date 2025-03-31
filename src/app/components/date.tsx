@@ -9,7 +9,7 @@ const DateSection: FC = (): JSX.Element => {
       <Header
         text="Assalomu alaykum"
         paragraph="Hurmatli qadrdonlar! Sizlarni aziz farzandlarimiz Sharofiddin va Shahlolarning nikoh to‘ylari munosabati bilan 2025-yil 3-may kuni soat 18:00 da bo‘lib o‘tadigan to‘y dasturxonimizga taklif etamiz!"
-        p="Hurmat va ehtirom ila, Botirovlar va Isoqovlar oilasi"
+        p="Hurmat va ehtirom ila, Abrievlar va Isoqovlar oilasi"
       />
 
       <div className="my-7 w-3/6 mx-auto flex items-center" data-aos="zoom-in">
