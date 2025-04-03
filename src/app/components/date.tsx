@@ -8,7 +8,10 @@ const DateSection: FC = (): JSX.Element => {
       <Flowers />
       <Header
         text="Assalomu alaykum"
-        paragraph="Hurmatli qadrdonlar! Sizlarni aziz farzandlarimiz Sharofiddin va Shahlolarning nikoh to‘ylari munosabati bilan 2025-yil 3-may kuni soat 18:00 da bo‘lib o‘tadigan to‘y dasturxonimizga taklif etamiz!"
+        // paragraph="Hurmatli qadrdonlar! Sizlarni aziz farzandlarimiz Sharofiddin va Shahlolarning nikoh to‘ylari munosabati bilan 2025-yil 3-may kuni soat 18:00 da bo‘lib o‘tadigan to‘y dasturxonimizga taklif etamiz!"
+        paragraph={
+          "Hurmatli qadirdonlar! Sizlarga katta hurmat va ehtirom bilan shuni ma’lum qilamizki, biz uchun eng quvonchli va baxtiyor kunlarimizdan biri – nikoh to‘yimiz yaqinlashmoqda. Ushbu ezgu kunda sizni yaqinlarimiz davrasida ko‘rish biz uchun katta baxt va sharaf bo‘ladi! \n\n Shu munosabat bilan sizni 2025-yil 3-may kuni, Guvalak qishlog'i Bahor to'yxonasida bo‘lib o‘tadigan to‘yimizga taklif qilamiz."
+        }
         p="Hurmat va ehtirom ila, Abrievlar va Isoqovlar oilasi"
       />
 
