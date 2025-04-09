@@ -23,7 +23,7 @@ const Location: FC = (): JSX.Element => {
         <MapPin size={22} color="#a9a05c" />
       </Link>
 
-      <CountdownTimer targetDate="2025-05-03T18:00:00" />
+      <CountdownTimer targetDate="2025-05-03T19:00:00" />
     </div>
   );
 };
