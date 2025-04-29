@@ -1,11 +1,13 @@
 import { FC } from "react";
 import Image from "next/image";
-import { greatVibes, rubik } from "@/fonts";
+import { greatVibes } from "@/fonts";
 import Flowers from "./flowers";
+import Line from "@/app/components/line";
+import ScrollDown from "@/app/components/scroll-down";
 
 const Showcase: FC = (): JSX.Element => {
   return (
-    <>
+    <div className="h-svh flex flex-col gap-5">
       <nav
         className="flex items-center justify-between p-4 px-8 mb-12"
         data-aos="fade-down"
@@ -33,7 +35,11 @@ const Showcase: FC = (): JSX.Element => {
           Shahlo
         </h1>
       </div>
-    </>
+        <div className="flex-1 flex flex-col items-center justify-between pt-16">
+            <Line />
+            <ScrollDown />
+        </div>
+    </div>
   );
 };
 

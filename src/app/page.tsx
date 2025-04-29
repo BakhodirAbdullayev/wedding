@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import Showcase from "./components/showcase";
-import Line from "./components/line";
 import DateSection from "./components/date";
 import Location from "./components/location";
 import Music from "./components/music";
@@ -17,9 +16,6 @@ export default function Home() {
   return (
     <main className="max-w-[450px] p-2 bg-[#ececec] w-full min-h-svh overflow-x-hidden">
       <Showcase />
-      <div className="my-20">
-        <Line />
-      </div>
       <DateSection />
       <Location />
       <Music />
